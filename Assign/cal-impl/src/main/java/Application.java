@@ -8,9 +8,9 @@ public class Application {
         int num1=sc.nextInt();
         System.out.println("Enter second number");
         int num2=sc.nextInt();
-        System.out.println("Enter choice");
-        char ch=sc.next().charAt(0);
+        System.out.println("Enter operator");
+        char operator=sc.next().charAt(0);
         Calculator com=new Calculator();
-        com.calci(num1,num2,ch);
+        com.calci(num1,num2,operator);
     }
 }

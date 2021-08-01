@@ -1,22 +1,27 @@
 
 public class Calculator {
-    public void calci(int num1 ,int num2,char ch){
-        int op=0;
-        if(ch=='+'){
-            op=num1+num2;
+    public void calci(int num1 ,int num2,char operator){
+        int result;
+        switch (operator){
+            case '+':
+               result=num1+num2;
+               System.out.println(result);
+                break;
+            case '-':
+                result=num1-num2;
+                System.out.println(result);
+                break;
+            case '*':
+                result=num1*num2;
+                System.out.println(result);
+                break;
+            case '/':
+                result=num1/num2;
+                System.out.println(result);
+                break;
+            default:
+                System.out.println("wrong operator");
         }
-        else if(ch=='-'){
-            op=num1-num2;
-        }
-        else if(ch=='*'){
-            op=num1*num2;
-        }
-        else if(ch=='/'){
-            op=num1/num2;
-        }
-        else{
-            System.out.println("Wrong Choice");
-        }
-        System.out.println(op);
+
     }
 }
